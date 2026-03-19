@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Шапка */
+.header {
+    background-color: #8cb08c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 4px solid #5a7a5a;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+/* Меню */
+.menu {
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #5a7a5a;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.menu a:hover {
+    background-color: #e0f0e0;
+}
+
+.menu a.active {
+    background-color: #8cb08c;
+    color: white;
+}
+
+/* Контент */
+.content {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    min-height: 500px;
+}
+
+/* Головна сторінка */
+.welcome-box {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+}
+
+.welcome-box h2 {
+    color: #5a7a5a;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Галерея на головній */
+.preview-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.preview-item {
+    text-align: center;
+    width: 120px;
+}
+
+.preview-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.preview-item span {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Блоки сезонів */
+.season-block {
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 2px solid #e0e0e0;
+}
+
+.spring-block { 
+    background-color: #ebf7eb;
+    border-left: 8px solid #2d6a4f;
+}
+.summer-block { 
+    background-color: #fff9e6;
+    border-left: 8px solid #b9770e;
+}
+.autumn-block { 
+    background-color: #fff0e6;
+    border-left: 8px solid #c45d1e;
+}
+.winter-block { 
+    background-color: #ebf5ff;
+    border-left: 8px solid #1e6f9f;
+}
+
+.season-block h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.spring-title { color: #2d6a4f; }
+.summer-title { color: #b9770e; }
+.autumn-title { color: #c45d1e; }
+.winter-title { color: #1e6f9f; }
+
+.season-desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Картки квітів */
+.flowers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.flower-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #e0e0e0;
+}
+
+.flower-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+}
+
+.flower-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.flower-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Кнопка */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8cb08c;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #5a7a5a;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5a7a5a;
+}
+
+/* Форма */
+.form-box {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #e0e0e0;
+}
+
+.form-box h2 {
+    color: #5a7a5a;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5a7a5a;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8cb08c;
+}
+
+.submit-btn {
+    background-color: #8cb08c;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid #5a7a5a;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #5a7a5a;
+}
+
+.form-note {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+}
+
+/* Підвал */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #8cb08c;
+}
+
+/* Для телефонів */
+@media (max-width: 700px) {
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .menu a {
+        display: block;
+        margin: 5px 20px;
+    }
+    
+    .preview-gallery {
+        gap: 15px;
+    }
+    
+    .preview-item {
+        width: 100px;
+    }
+    
+    .preview-item img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .flowers-grid {
+        grid-template-columns: 1fr;
+    }
+}

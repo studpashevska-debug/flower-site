@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотній зв'язок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>✉️ ЗВОРОТНІЙ ЗВ'ЯЗОК ✉️</h1>
+        <p>Напишіть нам про ваші улюблені квіти</p>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Головна</a>
+        <a href="seasons.html">Квіти за порами року</a>
+        <a href="form.html" class="active">Зворотній зв'язок</a>
+    </div>
+
+    <div class="content">
+        <div class="form-box">
+            <h2>Залиште повідомлення</h2>
+            
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" placeholder="Наприклад: Софія" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" name="email" placeholder="sofia@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="season">Улюблена пора року:</label>
+                    <select id="season" name="season">
+                        <option value="spring">Весна</option>
+                        <option value="summer">Літо</option>
+                        <option value="autumn">Осінь</option>
+                        <option value="winter">Зима</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Напишіть, які квіти вам подобаються..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Надіслати</button>
+            </form>
+
+            <div class="form-note">
+                <p>✨ Дякуємо за ваше повідомлення! ✨</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© Світ квітів | Над сайтом працювала Рашевська Софія</p>
+    </div>
+</body>
+</html>
